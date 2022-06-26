@@ -1,0 +1,103 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid pl-2 pr-2">
+        <a class="navbar-brand" href="#"><h1>Peachy Fitness</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="all-products-link" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All products
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="all-products-link">
+                        <li><a class="dropdown-item" href="#">By price</a></li>
+                        <li><a class="dropdown-item" href="#">By rating</a></li>
+                        <li><a class="dropdown-item" href="#">By category</a></li>
+                        <li><a class="dropdown-item" href="#">All products</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="clothing-link" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Clothing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="clothing-link">
+                        <li><a class="dropdown-item" href="#">Leggings</a></li>
+                        <li><a class="dropdown-item" href="#">Tops</a></li>
+                        <li><a class="dropdown-item" href="#">Sports bras</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="equipement-link" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Equipement
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="equipement-link">
+                        <li><a class="dropdown-item" href="#">Resistance bands</a></li>
+                        <li><a class="dropdown-item" href="#">Weights</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="workout-guides-link" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Workout guides
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="workout-guides-link">
+                        <li><a class="dropdown-item" href="#">Summer sass</a></li>
+                        <li><a class="dropdown-item" href="#">Booty building bananza</a></li>
+                        <li><a class="dropdown-item" href="#">By category</a></li>
+                        <li><a class="dropdown-item" href="#">All products</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-regular fa-user"></i>My Account
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <li><a class="dropdown-item" href="#">Product Management</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                        {% else %}
+                        <li>
+                            <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                        {% endif %}
+                        <li><a class="dropdown-item {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                                href="">
+                                <span><i class="fas fa-shopping-bag fa-lg"></i>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    $0.00
+                                    {% endif %}
+                                </p></span>
+
+                            </a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" method="get">
+                <input class="form-control me-2" type="text" name="q" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
