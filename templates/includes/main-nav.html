@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -21,7 +21,7 @@
                         <li><a class="dropdown-item" href="#">By price</a></li>
                         <li><a class="dropdown-item" href="#">By rating</a></li>
                         <li><a class="dropdown-item" href="#">By category</a></li>
-                        <li><a class="dropdown-item" href="#">All products</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}">All products</a></li>
                     </ul>
                 </li>
 
@@ -46,6 +46,7 @@
                         <li><a class="dropdown-item" href="#">Dumbells</a></li>
                         <li><a class="dropdown-item" href="#">Kettlebells</a></li>
                         <li><a class="dropdown-item" href="#">Resistance bands</a></li>
+                        <li><a class="dropdown-item" href="#">Exercise Mat</a></li>
                     </ul>
                 </li>
 
@@ -57,7 +58,6 @@
                     <ul class="dropdown-menu" aria-labelledby="workout-guides-link">
                         <li><a class="dropdown-item" href="#">Summer sass</a></li>
                         <li><a class="dropdown-item" href="#">Booty building bananza</a></li>
-                        <li><a class="dropdown-item" href="#">By category</a></li>
                         <li><a class="dropdown-item" href="#">All products</a></li>
                     </ul>
                 </li>
@@ -66,7 +66,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-regular fa-user"></i>My Account
+                        My Account
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                         {% if request.user.is_authenticated %}
