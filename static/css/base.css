@@ -21,6 +21,16 @@ header {
     padding-right: 0;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #D4CFD2;
+    z-index: -1;
+}
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
