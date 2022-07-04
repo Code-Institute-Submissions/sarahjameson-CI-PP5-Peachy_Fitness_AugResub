@@ -84,7 +84,7 @@
         "price": 21.99,
         "category": 3,
         "rating": 4.9,
-        "image": "pexels-anna-shvets-5262907.jpg"
+        "image": "pexels-artem-podrez-7648387.jpg"
     }
 },{
     "pk": 9,
@@ -134,10 +134,10 @@
     "pk": 13,
     "model": "products.product",
     "fields": {
-        "name": "Dumbells",
+        "name": "Dumbbells",
         "description": "Get the warms worked out with our fashionable dumbells!",
         "price": 17.99,
-        "category": 6,
+        "category": 4,
         "rating": 4.3,
         "image": "pexels-pixabay-39671.jpg"
     }
@@ -291,7 +291,7 @@
         "name": "Green Leggings",
         "description": "Comfy leggings that would be great for low impact activities and for relaxing at home.",
         "price": 35.99,
-        "category": 9,
+        "category": 2,
         "rating": 3.6,
         "image": "alexandra-tran-V34R7UhSJN4-unsplash.jpg"
     }
@@ -327,5 +327,16 @@
         "category": 3,
         "rating": 5,
         "image": "pexels-mikhail-nilov-7500425.jpg"
+    }
+},{
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "name": "Booty Building Bananza",
+        "description": "The fasted way to grow your glutes. Hyper-focused glute workouts 4-times weekly.",
+        "price": 15.99,
+        "category": 9,
+        "rating": 5,
+        "image": "booty-building-bananza.png"
     }
 }]

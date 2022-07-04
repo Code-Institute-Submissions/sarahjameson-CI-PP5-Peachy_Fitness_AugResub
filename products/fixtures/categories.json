@@ -23,8 +23,8 @@
     "pk": 4,
     "model": "products.category",
     "fields": {
-        "name": "dumbells",
-        "friendly_name": "Dumbells"
+        "name": "dumbbells",
+        "friendly_name": "Dumbbells"
     }
 }, {
     "pk": 5,
