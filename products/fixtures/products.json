@@ -1,0 +1,331 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "name": "Black Sports Bra",
+        "description": "One of our most popular basic sports bra. Perfect for chilling or working out a sweat. A girls best friend!",
+        "price": 15.99,
+        "category": 1,
+        "rating": 4.6,
+        "image": "pexels-pavel-danilyuk-6443441.jpg"
+    }
+},{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "name": "Cute Sports Bra with Back Detail",
+        "description": "The most iconic sports bra for when you are feeling frierce and ready to beat some PBs!",
+        "price": 21.99,
+        "category": 1,
+        "rating": 4.2,
+        "image": "pexels-los-muertos-crew-8391377.jpg"
+    }
+},{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "name": "Textured Sports Bra",
+        "description": "A very supportive sports bra that enables you to run and jump without any issues.",
+        "price": 24.99,
+        "category": 1,
+        "rating": 4.9,
+        "image": "pexels-tatiana-sozutova-11897168.jpg"
+    }
+},{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "name": "Leggings with Swirling Design",
+        "description": "Fashionable leggings to show off in the gym.",
+        "price": 45.99,
+        "category": 2,
+        "rating": 4.8,
+        "image": "pexels-karolina-grabowska-4498605.jpg"
+    }
+},{
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "name": "Speckled Leggings",
+        "description": "Leggings that stay in place and offer optimal comfort.",
+        "price": 45.99,
+        "category": 2,
+        "rating": 4.9,
+        "image": "pexels-karolina-grabowska-4379316.jpg"
+    }
+},{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "name": "Basic Black Leggings",
+        "description": "A great addition to your your basics wardrobe. These leggings will go with anything and suit may occassions.",
+        "price": 45.99,
+        "category": 2,
+        "rating": 4.2,
+        "image": "pexels-cottonbro-6800257.jpg"
+    }
+},{
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "name": "Oversized White T-Shirt",
+        "description": "An oversized white t-shirt. Perfect for a chilled out day!",
+        "price": 20.99,
+        "category": 3,
+        "rating": 4.5,
+        "image": "pexels-anna-shvets-5262907.jpg"
+    }
+},{
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "name": "White Collar Shirt",
+        "description": "A collared shirt to jazz up any outfit.",
+        "price": 21.99,
+        "category": 3,
+        "rating": 4.9,
+        "image": "pexels-anna-shvets-5262907.jpg"
+    }
+},{
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "name": "White T-Shirt with Design",
+        "description": "Not just a plain t-shirt. This t-shirt comes with a striking design that will get compliments from everyone around!",
+        "price": 25.99,
+        "category": 3,
+        "rating": 4.6,
+        "image": "pexels-anna-shvets-5262875.jpg"
+    }
+},{
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "name": "Gray Oversized T-Shirt",
+        "description": "Soft cotten that allows your skin to breathe. Perfect for a walk out in the countryside!",
+        "price": 17.99,
+        "category": 3,
+        "rating": 4.6,
+        "image": "pexels-mikhail-nilov-6740745.jpg"
+    }
+},{
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "name": "Kettlebells",
+        "description": "Grow your muscles nice and strong with one of our kettlebells!",
+        "price": 20.99,
+        "category": 5,
+        "rating": 4.9,
+        "image": "kettle-bells.jpg"
+    }
+},{
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "name": "Pack of Resistance Bands",
+        "description": "Get the booty pump by activating the glutes! Comes in a pack of 3 with different strengths.",
+        "price": 12.99,
+        "category": 6,
+        "rating": 4.5,
+        "image": "pexels-angela-roma-7479770.jpg"
+    }
+},{
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "name": "Dumbells",
+        "description": "Get the warms worked out with our fashionable dumbells!",
+        "price": 17.99,
+        "category": 6,
+        "rating": 4.3,
+        "image": "pexels-pixabay-39671.jpg"
+    }
+},{
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "name": "Exercise Mat",
+        "description": "High quality workout mat - suitable for yoga or high-intensivty workouts. Take your pick!",
+        "price": 19.99,
+        "category": 7,
+        "rating": 4.9,
+        "image": "pexels-pavel-danilyuk-6339731.jpg"
+    }
+},{
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "name": "Summer Sass",
+        "description": "The perfect companion for Summer! This guide is your bestie for hot girl summer. Full body workout 3 times a week, after 3 months, you can repeat and watch your body transform!",
+        "price": 20.99,
+        "category": 8,
+        "rating": 5.0,
+        "image": "summer-sass.png"
+    }
+},{
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "name": "Turquoise Tank",
+        "description": "Our most popular tank top. Breathable and stretchy, this top is perfect for any activity!",
+        "price": 20.99,
+        "category": 3,
+        "rating": 5,
+        "image": "pexels-marta-wave-6454046.jpg"
+    }
+},{
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "name": "Yellow Sports Bra with Blue Detail",
+        "description": "Supportive sports bra that allows you to pop in the gym. Durable and sweat proof. For the hardest of workouts!",
+        "price": 20.99,
+        "category": 1,
+        "rating": 4.6,
+        "image": "april-laugh-0hko-xWvyW8-unsplash.jpg"
+    }
+},{
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "name": "Red Sports Bra with Black Detail",
+        "description": "Supportive sports bra that allows you to pop in the gym. Durable and sweat proof. For the hardest of workouts!",
+        "price": 20.99,
+        "category": 1,
+        "rating": 4.6,
+        "image": "april-laugh-a9Ib--1yb5Y-unsplash.jpg"
+    }
+},{
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "name": "Blue Sports Bra",
+        "description": "Supportive sports bra that allows you to pop in the gym. Durable and sweat proof. For the hardest of workouts!",
+        "price": 20.99,
+        "category": 1,
+        "rating": 4.6,
+        "image": "april-laugh-LMt_Ppcq_tU-unsplash.jpg"
+    }
+},{
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "name": "Black Sports Bra with Mesh Detail and Design",
+        "description": "Fashionable sports bra that allows you to workout and feel supported while looking good.",
+        "price": 23.99,
+        "category": 1,
+        "rating": 4.8,
+        "image": "pexels-nathan-cowley-2440971.jpg"
+    }
+},{
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "name": "Gray Lounge Sports Bra",
+        "description": "One of our comfy options. This sports bra is great for yoga or other low impact sports. Otherwise, a great option for chilling around the house.",
+        "price": 19.99,
+        "category": 1,
+        "rating": 4.9,
+        "image": "pexels-mart-production-7879993.jpg"
+    }
+},{
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "name": "Zip-down Sports Bra",
+        "description": "Sports bra with zip detail. Supportive and sweat proof. One of our best-sellers.",
+        "price": 20.99,
+        "category": 1,
+        "rating": 5,
+        "image": "media/pexels-ketut-subiyanto-5039523.jpg"
+    }
+},{
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "name": "Orange Textured Leggings",
+        "description": "Fitted leggings that pull you in at the waist and support your curves.",
+        "price": 40.99,
+        "category": 2,
+        "rating": 4.6,
+        "image": "pexels-jonathan-borba-3076516.jpg"
+    }
+},{
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "name": "Black Stretchy Leggings",
+        "description": "These leggings have 4-way stretch to ensure that you can move in any direction. Perfect for yoga, pilates or some stretching.",
+        "price": 45.99,
+        "category": 2,
+        "rating": 5,
+        "image": "pexels-miriam-alonso-7593007.jpg"
+    }
+},{
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "name": "Short Black Mesh Leggings",
+        "description": "Ankle grazing leggings with a mesh detail. Sweat proof and fully supported. Perfect for high intensity exercise.",
+        "price": 50.99,
+        "category": 2,
+        "rating": 4.8,
+        "image": "subtle-cinematics-FeIxTBB1Iww-unsplash.jpg"
+    }
+},{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "name": "Dark Camo Leggings",
+        "description": "Cute camo leggings with a 4-way stretch. Suitable for high intensity workouts and also low impact ones.",
+        "price": 40.99,
+        "category": 2,
+        "rating": 4.6,
+        "image": "alexandra-tran-2otb_UlfC0w-unsplash.jpg"
+    }
+},{
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "name": "Green Leggings",
+        "description": "Comfy leggings that would be great for low impact activities and for relaxing at home.",
+        "price": 35.99,
+        "category": 9,
+        "rating": 3.6,
+        "image": "alexandra-tran-V34R7UhSJN4-unsplash.jpg"
+    }
+},{
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "name": "Baby Pink Tee",
+        "description": "Round collared t-shirt. Breathable cotton. Perfect for all workouts.",
+        "price": 20.99,
+        "category": 3,
+        "rating": 4.2,
+        "image": "logan-weaver-lgnwvr-9D_rUDe7xvA-unsplash.jpg"
+    }
+},{
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "name": "Tank Top with Design",
+        "description": "Sleeveless tank top that allows you skin to breathe even in the hottest and sweatiest conditions.",
+        "price": 12.99,
+        "category": 3,
+        "rating": 4.8,
+        "image": "alora-griffiths-0WDpID92pR8-unsplash.jpg"
+    }
+},{
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "name": "Long Sleeved Black T-shirt",
+        "description": "Supportive top that hugs and supports you. Great for high-intensity workouts.",
+        "price": 30.99,
+        "category": 3,
+        "rating": 5,
+        "image": "pexels-mikhail-nilov-7500425.jpg"
+    }
+}]

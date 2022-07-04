@@ -1,0 +1,64 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "sports_bras",
+        "friendly_name": "Sports bras"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "leggings",
+        "friendly_name": "Leggings"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "t_shirts",
+        "friendly_name": "T-Shirts"
+    }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "dumbells",
+        "friendly_name": "Dumbells"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "kettlebells",
+        "friendly_name": "Kettlebells"
+    }
+}, {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+        "name": "resistance_bands",
+        "friendly_name": "Resistance bands"
+    }
+}, {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+        "name": "exercise_mat",
+        "friendly_name": "Exercise Mat"
+    }
+}, {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+        "name": "summer_sass",
+        "friendly_name": "Summer Sass"
+    }
+}, {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+        "name": "booty_building_bananza",
+        "friendly_name": "Booty building bananza"
+    }
+}]
