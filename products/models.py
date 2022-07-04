@@ -4,7 +4,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Categories"
-        
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, blank=True)
 
@@ -27,3 +27,16 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+# class Review(models.Model):
+#     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     rating = models.DecimalField(
+#         max_digits=5, decimal_places=2, null=True, blank=False)
+#     review = models.TextField(max_length=500, blank=True)
+#     status = models.BooleanField(default=True)
+#     created_on = models.DateTimeField(auto_now_add=True)
+#     updated_on = models.DateTimeField(auto_now=True)
+
+#     def __str__(self):
+#         return self.review
