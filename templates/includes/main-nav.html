@@ -83,7 +83,7 @@
                         <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
                         {% endif %}
                         <li><a class="dropdown-item {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                                href="">
+                                href="{% url 'view_shopping_bag' %}">
                                 <span><i class="fas fa-shopping-bag fa-lg"></i>
                                 <p class="my-0">
                                     {% if grand_total %}

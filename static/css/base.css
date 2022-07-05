@@ -45,6 +45,18 @@ a.category-badge > span.badge:hover {
     color: #D4CFD2 !important;
 }
 
+.btt-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btt-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {
