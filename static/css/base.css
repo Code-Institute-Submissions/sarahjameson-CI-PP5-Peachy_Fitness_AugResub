@@ -56,6 +56,11 @@ a.category-badge > span.badge:hover {
     text-decoration: none;
 }
 
+.go-back-btn:hover {
+    background-color: #414468 !important;
+    color: #D4CFD2 !important;
+}
+
 
 /* -------------------------------- Media Queries */
 
