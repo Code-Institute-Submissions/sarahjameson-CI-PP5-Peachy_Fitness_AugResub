@@ -10,6 +10,7 @@ body {
 
 h1 {
     font-family: 'Dancing Script', cursive;
+    color: #943875;
 }
 
 h2,
@@ -24,6 +25,11 @@ header {
     padding-right: 0;
 }
 
+.search-button:hover {
+    background-color: #414468 !important;
+    color: #D4CFD2 !important;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -32,6 +38,11 @@ header {
     position: fixed;
     background: #D4CFD2;
     z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background-color: #414468 !important;
+    color: #D4CFD2 !important;
 }
 
 /* -------------------------------- Media Queries */
