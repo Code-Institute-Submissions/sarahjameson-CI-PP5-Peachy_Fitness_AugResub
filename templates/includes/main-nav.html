@@ -18,9 +18,9 @@
                         All products
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="all-products-link">
-                        <li><a class="dropdown-item" href="#">By price</a></li>
-                        <li><a class="dropdown-item" href="#">By rating</a></li>
-                        <li><a class="dropdown-item" href="#">By category</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By rating</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By category</a></li>
                         <li><a class="dropdown-item" href="{% url 'products' %}">All products</a></li>
                     </ul>
                 </li>
