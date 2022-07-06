@@ -23,14 +23,64 @@
 
 
 <div class="row">
-    <div class="col text-center">
-        {% if bag_items %}
-        <div class="table-responsive rounded">
-            {{ bag_items }}
+    <div class="col">
+        <div class="row mb-3">
+            <div class="col-sm-12 col-md-4 mb-2">
+                <h4></h4>
+            </div>
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <h4>Name</h4>
+            </div>
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <h4>Quantity</h4>
+            </div>
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <h4>Price</h4>
+            </div>
         </div>
+        {% if bag_items %}
+        {% for item in bag_items %}
+        <div class="row mb-3">
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+            </div>
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <p class="my-0">{{ item.quantity }}</p>
+            </div>
+            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+                <p class="my-0">Subtotal: €{{ item.product.price }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row text-center">
+            <div class="col-12 mt-4 text-right">
+                <h6 class="bag-font"><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                <h4 class="mt-4 grand-total"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                {% if free_delivery_delta > 0 %}
+                <p class="mb-1 text-danger">
+                    Spend an extra <strong>£{{ free_delivery_delta }}</strong> to get free delivery!
+                </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="row mt-4 mb-4 text-center">
+            <div class="col-12 text-right">
+                <a href="{% url 'products' %}" class="btn rounded-0 btn-lg bag-btn bag-back-btn">
+                    <span class="icon text-uppercase">
+                        <i class="fas fa-chevron-left bag-btn-font"></i>
+                        Keep Shopping
+                    </span>
+                </a>
+                <a href="" class="btn rounded-1 btn-lg">
+                    <span class="text-uppercase">Checkout</span>
+                    <span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                </a>
+            </div>
         {% else %}
         <p class="lead mb-5">Your shopping bag is empty.</p>
-        <a href="{% url 'products' %}" class="btn btn-custom rounded-1 btn-lg go-back-btn">
+        <a href="{% url 'products' %}" class="btn btn-custom rounded-1 btn-lg">
             <span class="icon text-navy">
                 <i class="fas fa-chevron-circle-left"></i>
             </span>
