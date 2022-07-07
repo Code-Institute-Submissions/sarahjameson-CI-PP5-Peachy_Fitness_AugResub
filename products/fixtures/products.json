@@ -7,6 +7,7 @@
         "price": 15.99,
         "category": 1,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "pexels-pavel-danilyuk-6443441.jpg"
     }
 },{
@@ -18,6 +19,7 @@
         "price": 21.99,
         "category": 1,
         "rating": 4.2,
+        "sizes_available": "True",
         "image": "pexels-los-muertos-crew-8391377.jpg"
     }
 },{
@@ -29,6 +31,7 @@
         "price": 24.99,
         "category": 1,
         "rating": 4.9,
+        "sizes_available": "True",
         "image": "pexels-tatiana-sozutova-11897168.jpg"
     }
 },{
@@ -40,6 +43,7 @@
         "price": 45.99,
         "category": 2,
         "rating": 4.8,
+        "sizes_available": "True",
         "image": "pexels-karolina-grabowska-4498605.jpg"
     }
 },{
@@ -51,6 +55,7 @@
         "price": 45.99,
         "category": 2,
         "rating": 4.9,
+        "sizes_available": "True",
         "image": "pexels-karolina-grabowska-4379316.jpg"
     }
 },{
@@ -62,6 +67,7 @@
         "price": 45.99,
         "category": 2,
         "rating": 4.2,
+        "sizes_available": "True",
         "image": "pexels-cottonbro-6800257.jpg"
     }
 },{
@@ -73,6 +79,7 @@
         "price": 20.99,
         "category": 3,
         "rating": 4.5,
+        "sizes_available": "True",
         "image": "pexels-anna-shvets-5262907.jpg"
     }
 },{
@@ -84,6 +91,7 @@
         "price": 21.99,
         "category": 3,
         "rating": 4.9,
+        "sizes_available": "True",
         "image": "pexels-artem-podrez-7648387.jpg"
     }
 },{
@@ -95,6 +103,7 @@
         "price": 25.99,
         "category": 3,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "pexels-anna-shvets-5262875.jpg"
     }
 },{
@@ -106,6 +115,7 @@
         "price": 17.99,
         "category": 3,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "pexels-mikhail-nilov-6740745.jpg"
     }
 },{
@@ -172,6 +182,7 @@
         "price": 20.99,
         "category": 3,
         "rating": 5,
+        "sizes_available": "True",
         "image": "pexels-marta-wave-6454046.jpg"
     }
 },{
@@ -183,6 +194,7 @@
         "price": 20.99,
         "category": 1,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "april-laugh-0hko-xWvyW8-unsplash.jpg"
     }
 },{
@@ -194,6 +206,7 @@
         "price": 20.99,
         "category": 1,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "april-laugh-a9Ib--1yb5Y-unsplash.jpg"
     }
 },{
@@ -205,6 +218,7 @@
         "price": 20.99,
         "category": 1,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "april-laugh-LMt_Ppcq_tU-unsplash.jpg"
     }
 },{
@@ -216,6 +230,7 @@
         "price": 23.99,
         "category": 1,
         "rating": 4.8,
+        "sizes_available": "True",
         "image": "pexels-nathan-cowley-2440971.jpg"
     }
 },{
@@ -227,6 +242,7 @@
         "price": 19.99,
         "category": 1,
         "rating": 4.9,
+        "sizes_available": "True",
         "image": "pexels-mart-production-7879993.jpg"
     }
 },{
@@ -238,7 +254,8 @@
         "price": 20.99,
         "category": 1,
         "rating": 5,
-        "image": "media/pexels-ketut-subiyanto-5039523.jpg"
+        "sizes_available": "True",
+        "image": "pexels-ketut-subiyanto-5039523.jpg"
     }
 },{
     "pk": 23,
@@ -249,6 +266,7 @@
         "price": 40.99,
         "category": 2,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "pexels-jonathan-borba-3076516.jpg"
     }
 },{
@@ -260,6 +278,7 @@
         "price": 45.99,
         "category": 2,
         "rating": 5,
+        "sizes_available": "True",
         "image": "pexels-miriam-alonso-7593007.jpg"
     }
 },{
@@ -271,6 +290,7 @@
         "price": 50.99,
         "category": 2,
         "rating": 4.8,
+        "sizes_available": "True",
         "image": "subtle-cinematics-FeIxTBB1Iww-unsplash.jpg"
     }
 },{
@@ -282,6 +302,7 @@
         "price": 40.99,
         "category": 2,
         "rating": 4.6,
+        "sizes_available": "True",
         "image": "alexandra-tran-2otb_UlfC0w-unsplash.jpg"
     }
 },{
@@ -293,6 +314,7 @@
         "price": 35.99,
         "category": 2,
         "rating": 3.6,
+        "sizes_available": "True",
         "image": "alexandra-tran-V34R7UhSJN4-unsplash.jpg"
     }
 },{
@@ -304,6 +326,7 @@
         "price": 20.99,
         "category": 3,
         "rating": 4.2,
+        "sizes_available": "True",
         "image": "logan-weaver-lgnwvr-9D_rUDe7xvA-unsplash.jpg"
     }
 },{
@@ -315,6 +338,7 @@
         "price": 12.99,
         "category": 3,
         "rating": 4.8,
+        "sizes_available": "True",
         "image": "alora-griffiths-0WDpID92pR8-unsplash.jpg"
     }
 },{
@@ -326,6 +350,7 @@
         "price": 30.99,
         "category": 3,
         "rating": 5,
+        "sizes_available":"True",
         "image": "pexels-mikhail-nilov-7500425.jpg"
     }
 },{
