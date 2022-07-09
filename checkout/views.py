@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.conf import settings
 from .models import OrderLineItem, Order
 from .forms import OrderForm
+from products.models import Product
 from shopping_bag.contexts import bag_contents
 
 import stripe
