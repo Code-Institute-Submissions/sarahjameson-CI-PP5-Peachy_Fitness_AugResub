@@ -37,7 +37,7 @@
     border: 1px solid #414469;
 }
 
-/* select,
+select,
 select option {
     color: #04212E;
 }
@@ -65,4 +65,4 @@ select option[value=""] {
     justify-content: center;
     margin: 0;
     height: 100%;
-} */
+}
