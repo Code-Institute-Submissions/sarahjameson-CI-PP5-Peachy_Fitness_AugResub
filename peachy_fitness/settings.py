@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'crispy_forms',
     'django_countries',
+    'crispy_forms',
     'crispy_bootstrap5',
     'home',
     'products',
@@ -63,6 +63,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'peachy_fitness.urls'
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 TEMPLATES = [
@@ -79,11 +81,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'shopping_bag.contexts.bag_contents',
             ],
             'builtins': [
-                'crispy_forms.templates.crispy_forms_tags',
-                'crispy_forms.templates.crispy_forms_field',
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
             ]
         },
     },
