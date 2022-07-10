@@ -97,19 +97,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 pt-2">
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <div class="col{% if s %}-12 mt-2{% endif %}">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                            <span class="text-uppercase">Secure Checkout</span>
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
-                        </a>
+                        <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     {% endwith %}
@@ -118,6 +113,43 @@
         </div>
     </div>
 </div>
+
+<div class="container mb-5 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h3 class="mb-5 text-center">View Comments</h3>
+            {% if not product.comments.all %}
+            <div class="comment">
+                <p>No comments yet.</p>
+            </div>
+            {% else %}
+            {% for comment in product.comments.all %}
+            <div class="comment mb-5">
+                <p><strong>{{ comment.title }}</strong></p>
+                <p>{{ comment.body }}</p>
+                <small class="text-muted">Comment by {{ comment.author|title }} on {{ comment.date_created }}</small>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <h3 class="mb-5">Add A Comment</h3>
+            {% if request.user.is_authenticated %}
+            <form action="." method="POST" class="text-left">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <input type="submit" value="Add Comment" class="btn btn-custom">
+            </form>
+            {% else %}
+            <p>I'm sorry, you must be logged in to leave a comment. Please log in here.</p>
+            <a href="{% url 'account_login' %}" class="btn btn-custom rounded-0">
+                <span class="font-weight-bold">Log In</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}

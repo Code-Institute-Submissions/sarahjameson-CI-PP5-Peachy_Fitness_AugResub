@@ -1,10 +1,11 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, CommentForm
 
 
 def all_products(request):
@@ -40,7 +41,8 @@ def all_products(request):
                 messages.error(request, "You didn't enter a search term")
                 return redirect(reverse('products'))
 
-            queries = (Q(name__icontains=query) | Q(description__icontains=query))
+            queries = (Q(name__icontains=query) |
+                       Q(description__icontains=query))
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -57,9 +59,23 @@ def all_products(request):
 
 def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
+    if request.user:
+        if request.method == 'POST':
+            form = CommentForm(request.POST)
+
+            if form.is_valid():
+                comment = form.save(commit=False)
+                comment.author = request.user
+                comment.product = product
+                comment.save()
+
+                return redirect(reverse('product_info', args=[product.id]))
+        else:
+            form = CommentForm()
 
     context = {
         'product': product,
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)

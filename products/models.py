@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 class Category(models.Model):
 
@@ -28,15 +30,30 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
-# class Review(models.Model):
-#     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     rating = models.DecimalField(
-#         max_digits=5, decimal_places=2, null=True, blank=False)
-#     review = models.TextField(max_length=500, blank=True)
-#     status = models.BooleanField(default=True)
-#     created_on = models.DateTimeField(auto_now_add=True)
-#     updated_on = models.DateTimeField(auto_now=True)
 
-#     def __str__(self):
-#         return self.review
+class Comment(models.Model):
+    """
+    Comment class
+    """
+    product = models.ForeignKey(Product, on_delete=models.CASCADE,
+                                related_name='comments')
+    author = models.ForeignKey(User, blank=False, null=False,
+                               on_delete=models.CASCADE)
+    title = models.CharField(max_length=250)
+    body = models.TextField()
+    date_created = models.DateTimeField(auto_now_add=True)
+    comment_image = models.ImageField(null=True, blank=True)
+
+    class Meta:
+        """
+        Ordering our posts in created order,
+        the lack of '-' means in ascending order.
+        """
+        ordering = ['-date_created']
+
+    def __str__(self):
+        """
+        Returns a string showing the authors name
+        and the content of the comment.
+        """
+        return f"Comment on {self.product.name} by {self.author}"
