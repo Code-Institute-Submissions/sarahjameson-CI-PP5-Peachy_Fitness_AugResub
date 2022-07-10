@@ -1,4 +1,4 @@
-% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block extra_css %}
@@ -17,12 +17,57 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">My Profile</h2>
-                <hr>
+            <div class="col-12 col-md-10 offset-md-1 text-center mt-5 mb-5">
+                <h2 class="logo-font mb-4">{{ request.user|title }}'s Profile</h2>
+                <p>
+                    Welcome to your profile page, {{ request.user|title }}! Please view your
+                    account details here.
+                </p>
             </div>
         </div>
+        <div class="col-12 col-lg-6">
+            <h2 class="mb-3 text-navy text-center">Order History</h2>
+            <div class="order-history table-responsive">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Order Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="open-sans-text">
+                        {% for order in orders %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'order_history' order.order_number %}"
+                                    title="{{ order.order_number }}">
+                                    {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </td>
+
+                            <td class="small">{{ order.date }}</td>
+
+                            <td>
+                                <ul class="list-unstyled">
+                                    {% for item in order.lineitems.all %}
+                                    <li class="small">
+                                        {% if item.product.sizes_available %}
+                                        Size {{ item.product.size|upper }}
+                                        {% endif %}{{ item.product.name }} x{{ item.quantity }}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                            <td>€{{ order.grand_total }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    </div>
 {% endblock %}
 
 {% block postloadjs %}
