@@ -20,53 +20,50 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col text-center">
-        {% if bag_items %}
-        {% for item in bag_items %}
-        <div class="row mb-3">
-            <div class="col-sm-12 col-md-4 mb-2">
-                {% include "shopping_bag/product-image.html" %}
-            </div>
-            <div class="col-12 col-md-2 mb-2 align-self-center">
-                {% include "shopping_bag/product-info.html" %}
-            </div>
-            <div class="col-12 col-md-2 mb-2 align-self-center">
-                <p class="my-0">Price: €{{ item.product.price }}</p>
-            </div>
-            <div class="col-sm-6 col-md-2 mb-2 align-self-center">
-                {% include "shopping_bag/quantity-form.html" %}
-            </div>
-            <div class="col-sm-6 col-md-2 mb-4 align-self-center">
-                <p class="my-0">Subtotal: €{{ item.product.price }}</p>
-            </div>
-        </div>
-        {% endfor %}
-        <div class="row mb-5">
-            <div class="col justify-content-end text-right open-sans-text">
-                {% include "shopping_bag/bag-total.html" %}
-                {% include "shopping_bag/checkout-buttons.html" %}
-            </div>
-        </div>
-        {% else %}
-        <div class="row">
-            <div class="col align-self-right">
-                <p class="lead mb-5">Your shopping bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-custom rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-circle-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">Keep Shopping</span>
-                </a>
-            </div>
-        </div>
-        {% endif %}
+{% if bag_items %}
+{% for item in bag_items %}
+<div class="row mb-3">
+    <div class="col-sm-12 col-md-4 mb-2">
+        {% include "shopping_bag/product-image.html" %}
     </div>
-    <div class="btt-button bg-white p-1 rounded-circle">
-        <a class="btt-link d-flex h-100">
-            <i class="fa-2x fas fa-arrow-circle-up text-navy mx-auto my-auto"></i>
+    <div class="col-12 col-md-2 mb-2 align-self-center">
+        {% include "shopping_bag/product-info.html" %}
+    </div>
+    <div class="col-12 col-md-2 mb-2 align-self-center">
+        <p class="my-0">Price: €{{ item.product.price }}</p>
+    </div>
+    <div class="col-sm-6 col-md-2 mb-2 align-self-center">
+        {% include "shopping_bag/quantity-form.html" %}
+    </div>
+    <div class="col-sm-6 col-md-2 mb-4 align-self-center">
+        <p class="my-0">Subtotal: €{{ item.product.price }}</p>
+    </div>
+</div>
+{% endfor %}
+<div class="row mb-5">
+    <div class="col justify-content-end text-right open-sans-text">
+        {% include "shopping_bag/bag-total.html" %}
+        {% include "shopping_bag/checkout-buttons.html" %}
+    </div>
+</div>
+{% else %}
+<div class="row">
+    <div class="col align-self-right">
+        <p class="lead mb-5">Your shopping bag is empty.</p>
+        <a href="{% url 'products' %}" class="btn btn-custom rounded-0 btn-lg">
+            <span class="icon">
+                <i class="fas fa-circle-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
         </a>
     </div>
+</div>
+{% endif %}
+<div class="btt-button bg-white p-1 rounded-circle">
+    <a class="btt-link d-flex h-100">
+        <i class="fa-2x fas fa-arrow-circle-up text-navy mx-auto my-auto"></i>
+    </a>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
