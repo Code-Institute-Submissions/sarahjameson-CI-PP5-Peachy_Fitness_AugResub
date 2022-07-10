@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid pl-2 pr-2">
-        <a class="navbar-brand" href="#"><h1>Peachy Fitness</h1></a>
+        <a class="navbar-brand" href="{% url 'home' %}"><h1>Peachy Fitness</h1></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -9,18 +9,18 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}" aria-label="This link takes you to the home page">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="all-products-link" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Dropdown for product page options">
                         All products
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="all-products-link">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc">By price</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc">By rating</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc">By category</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=price&direction=asc" aria-label="This link brings you to the products page where the product are order by price.">By price</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=rating&direction=desc" aria-label="This link brings you to the products page where the product are order by rating.">By rating</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?sort=category&direction=asc" aria-label="This link brings you to the products page where the product are order by category.">By category</a></li>
                         <li><a class="dropdown-item" href="{% url 'products' %}">All products</a></li>
                     </ul>
                 </li>
@@ -31,59 +31,59 @@
                         Clothing
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="clothing-link">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=leggings">Leggings</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=t_shirts">T-Shirts</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=sports_bras">Sports bras</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=sports_bras,t_shirts,leggings">All clothing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=leggings" aria-label="This link brings you to the a page showing leggings products for sale.">Leggings</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=t_shirts" aria-label="This link brings you to the a page showing t-shirt products for sale.">T-Shirts</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=sports_bras" aria-label="This link brings you to the a page showing sports bras products for sale.">Sports bras</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=sports_bras,t_shirts,leggings" aria-label="This link brings you to the a page showing all the clothing products for sale.">All clothing</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="equipement-link" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Dropdown for workout equipement page options">
                         Equipement
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="equipement-link">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=dumbbells">Dumbbells</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=kettlebells">Kettlebells</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=resistance_bands">Resistance bands</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=exercise_mat">Exercise mat</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=dumbbells,kettlebells,resistance_bands,exercise_mat">All equipement</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=dumbbells" aria-label="This link brings you to the a page showing dumbbells products for sale.">Dumbbells</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=kettlebells" aria-label="This link brings you to the a page showing kettlebells products for sale.">Kettlebells</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=resistance_bands" aria-label="This link brings you to the a page showing resistance bands products for sale.">Resistance bands</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=exercise_mat" aria-label="This link brings you to the a page showing exercise mat products for sale.">Exercise mat</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=dumbbells,kettlebells,resistance_bands,exercise_mat" aria-label="This link brings you to the a page showing all exercise equipement products for sale.">All equipement</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="workout-guides-link" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Dropdown for workout guides page options">
                         Workout guides
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="workout-guides-link">
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=summer_sass">Summer sass</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=booty_building_bananza">Booty building bananza</a></li>
-                        <li><a class="dropdown-item" href="{% url 'products' %}?category=summer_sass,booty_building_bananza">All workout guides</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=summer_sass" aria-label="This link brings you to the a page showing the workout guide summer sass.">Summer sass</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=booty_building_bananza" aria-label="This link brings you to the a page showing the workout guide booty building bananza.">Booty building bananza</a></li>
+                        <li><a class="dropdown-item" href="{% url 'products' %}?category=summer_sass,booty_building_bananza" aria-label="This link brings you to the a page showing all the workout guide products for sale.">All workout guides</a></li>
                     </ul>
                 </li>
 
 
                 <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        data-bs-toggle="dropdown" aria-expanded="false" aria-label="Dropdown for user options">
                         My Account
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <li><a class="dropdown-item" href="{% url 'add_product' %}">Product Management</a></li>
+                        <li><a class="dropdown-item" href="{% url 'add_product' %}" aria-label="Link to add a product to the store">Product Management</a></li>
                         {% endif %}
-                        <li><a class="dropdown-item" href="{% url 'profile' %}">My Profile</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                        <li><a class="dropdown-item" href="{% url 'profile' %}" aria-label="Link to go to your profile">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_logout' %}" aria-label="Link to go to 'log out' screen">Logout</a></li>
                         {% else %}
                         <li>
-                            <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                        <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                            <a class="dropdown-item" href="{% url 'account_signup' %}" aria-label="Link to go to 'sign up' screen">Register</a></li>
+                        <li><a class="dropdown-item" href="{% url 'account_login' %}" aria-label="Link to go to 'log in' screen">Login</a></li>
                         {% endif %}
                         <li><a class="dropdown-item {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                                href="{% url 'view_shopping_bag' %}">
+                                href="{% url 'view_shopping_bag' %}" aria-label="Link to view the items in your shopping bag">
                                 <span class="ps-1"><i class="fas fa-shopping-bag fa-lg"></i>
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
