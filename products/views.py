@@ -125,3 +125,17 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def delete_product(request, product_id):
+    """
+    Delete the the product from the store
+    """
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, you don't have permission to do that.")
+        return redirect(reverse('home'))
+
+    product = get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, f'You deleted {product.name} from the store.')
+    return redirect(reverse('products'))
