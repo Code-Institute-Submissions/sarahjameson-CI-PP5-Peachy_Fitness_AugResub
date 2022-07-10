@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
+from .forms import ProductForm
 
 
 def all_products(request):
@@ -61,3 +62,33 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """
+    Used for admin to add a product to the store
+    """
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, you don't have permission to do that.")
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST, request.FILES)
+        if product_form.is_valid():
+            product = product_form.save()
+            messages.success(request, 'You have successfully added a new \
+                product')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request,
+                           ("I'm sorry, there was a failure adding your product. "
+                            "Please check your form and try again."))
+    else:
+        product_form = ProductForm()
+
+    template = 'products/add_product.html'
+    context = {
+        'product_form': product_form,
+    }
+
+    return render(request, template, context)
