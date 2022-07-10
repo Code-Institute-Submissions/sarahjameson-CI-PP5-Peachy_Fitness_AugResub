@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
@@ -64,6 +65,7 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def add_product(request):
     """
     Used for admin to add a product to the store
@@ -93,6 +95,8 @@ def add_product(request):
 
     return render(request, template, context)
 
+
+@login_required
 def edit_product(request, product_id):
     """
     Used to add a product in the store
@@ -127,6 +131,7 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
     """
     Delete the the product from the store
