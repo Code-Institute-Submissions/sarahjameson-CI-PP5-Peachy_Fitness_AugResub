@@ -123,15 +123,11 @@ LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://rgoprgqtrdvmdz:8667fff85b99712aaae9a0c8375935df26ede5e9438a6283e3375699d5ee7e66@ec2-34-242-84-130.eu-west-1.compute.amazonaws.com:5432/db8d6nt71p9qr2')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
