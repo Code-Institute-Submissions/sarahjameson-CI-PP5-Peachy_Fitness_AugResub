@@ -1,1 +1,1 @@
-web: gunicorn wagging_tailor.wsgi:application
+web: gunicorn peachy_fitness.wsgi:application
