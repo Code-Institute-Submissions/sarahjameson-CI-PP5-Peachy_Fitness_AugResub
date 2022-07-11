@@ -69,7 +69,7 @@ def product_detail(request, product_id):
                 comment.product = product
                 comment.save()
 
-                return redirect(reverse('product_info', args=[product.id]))
+                return redirect(reverse('product_detail', args=[product.id]))
         else:
             form = CommentForm()
 
