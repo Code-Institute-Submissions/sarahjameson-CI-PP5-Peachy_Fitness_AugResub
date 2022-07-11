@@ -5,6 +5,7 @@ html {
 body {
     background: url('../../media/background-image.png.jpg') no-repeat center fixed;
     background-size: cover;
+    color: #414468;
 
 }
 
@@ -25,7 +26,25 @@ header {
     padding-right: 0;
 }
 
-.search-button:hover {
+#home {
+    height: 60vh;
+}
+
+#main-navbar {
+    background-color: rgba(255,255,255,0.5);
+}
+
+#main-navbar a {
+    color: #414468;
+}
+
+.btn {
+    background-color: #943875;
+    color: #D4CFD2;
+}
+
+.search-button:hover,
+.btn:hover {
     background-color: #414468 !important;
     color: #D4CFD2 !important;
 }
@@ -162,6 +181,10 @@ a.category-badge > span.badge:hover {
     border-radius: 0;
 }
 
+footer, footer a {
+    background-color: #414468;
+    color: #aab7c4 !important;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -195,9 +218,12 @@ a.category-badge > span.badge:hover {
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
+    #delivery-banner {
+        background-color: #414468 !important;
+    }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .btn.btn-outline-black.rounded-0,

@@ -79,6 +79,39 @@
     {% block content %}
     {% endblock %}
 
+
+
+    <footer class="mt-3">
+        <div class="container-fluid">
+            <div class="row pb-3 pt-3 mt-auto">
+                <div class="col-12 col-lg-6">
+                    <h5>Thank you so much for visiting Peachy Fitness today!</h5>
+                    <p class="text-left text-sm-center text-light">Please leave us a message. We would love to hear from
+                        you. <a href="{% url 'contact' %}"
+                            aria-label="Brings user to the contact page where you can send a message to the company and request a call back.">Take
+                            me to the contact form please!</p>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="text-center text-md-right align-middle">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating" aria-label="Facebook" target="_blank" rel="nofollow">
+                                    <i class="fab fa-facebook social"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating" aria-label="Instagram" target="_blank" rel="nofollow">
+                                    <i class="fab fa-instagram social"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     {% block postloadjs %}
     {{ block.super }}
     <script>
