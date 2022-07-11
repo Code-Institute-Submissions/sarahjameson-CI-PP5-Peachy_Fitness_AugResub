@@ -110,7 +110,44 @@ To create a site that fit the user's needs, I planned the following marketing st
 
 </details>
 
+### **Scope**
+I defined a scope to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
+
+- **Content Requirements**
+    - The user will be looking for:
+        - A variety of products to choose from that come under fitness goals
+        - Details of the products provided
+        - A way to search the site using the name or description fields
+        - A filtering function by rating, name, price and category
+        - A  Profile Page displaying the user's saved address and past order
+- **Functionality Requirements**
+    - The user will be able to:
+        - Select their desired size for each product
+        - Update their profile with with a address
+        - Easily navigate the site to find product information
+
+#### **Structure**
+The website was organized in a hierarchical tree structure to ensure that users could navigate through the site with easily.
+
+#### **Skeleton**
+I created the Wireframe mockups using [Balsamiq](https://balsamiq.com/). Please find the file below:
+- [Wireframes](media/README/wireframes)
+
+[Back to top ⇧](#)
+
 ### Design
+#### **Colour Scheme**
+The colour scheme was influenced by the home page photo. The purple and pink are fun playful colours. A very faint purple was used as a contrast to the deeper purple and pink.
+
+![](media/README/colour-scheme.png)
+
+#### **Typography**
+The font chosen for the headings was Dancing Script. All the other test was done in Mulish. The Dancing Script was used as the logo. It is fun and elegant. Mulish is very modern and trendy. It is easy to read.
+
+#### **Imagery**
+The imagery used in this site is entirely related to the products being sold - exercise goods.
+
+[Back to top ⇧](#)
 
 ## Features
 
