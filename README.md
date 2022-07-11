@@ -101,14 +101,7 @@ To create a site that fit the user's needs, I planned the following marketing st
 
     - **Social Media Marketing** - I used Organic Social Media Marketing. It is a free and easy way to get a brand across. The site can be shared with others and special events or sales can be shared free of charge. This allows the store to connect directly with the consumer and build relationships and loyalty with the customers. This form of marketing can also be used to improve the store's customer service and support. Issues can be dealt with publically in a friendly or even funny way. The social media chosen for this project was [Facebook](https://www.facebook.com/Peachy-Fitness-104511555665795).
 
-<details>
-
-<details>
-<summary>Facebook Screenshot:</summary>
-
-![Facebook Page for Peachy Fitness](static/media/README/facebook.png)
-
-</details>
+![Facebook Page for Peachy Fitness](media/README/facebook.png)
 
 ### **Scope**
 I defined a scope to identify what needed to be done to align features with the strategy previously defined. This was broken into two categories:
