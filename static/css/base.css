@@ -186,6 +186,10 @@ footer, footer a {
     color: #aab7c4 !important;
 }
 
+footer {
+    margin-top: 2rem;
+}
+
 /* -------------------------------- Media Queries */
 
 @media (min-width: 1200px) {

@@ -143,6 +143,34 @@ The imagery used in this site is entirely related to the products being sold - e
 [Back to top ⇧](#)
 
 ## Features
+## Design Features
+**Navigation & Header**
+
+Each page of the website features a consistent responsive navigational system:
+- **Logo** - The Logo heading is linked to the home page, clicking it will bring the user back to the home page.
+- **Search Bar** - The search bar is coded to display the results of the user's search request.
+- **Shopping Bag Icons** - There is an icon and a link to the shopping bag showing the current bag total. The icon's dropdown selection is updated depending on whether the user is logged in or logged out.
+- **Link to user's profile** - There is a link to the user's profile depending on if they are linked in or not.
+- **Links to Category Pages** - There are links to several categories of product pages. These pages show products of certain categories grouped by different categories such as leggings and sports_bras.
+
+**Footer**
+Each page of the website features a consistent responsive footer design:
+- **A 'Stay in touch' Piece Of Text** - The footer displays a text asking the users to stay in touch.
+- **Social Media Links** - These links connect the site user to the store's business Facebook page.
+- **Subscribe to newsletter** - Mailchimp form is present in the footer.
+
+**Home Page**
+The home page is the main entry page to the site and gives the customer a call to action straight away. The purpose of the site is clear.
+- **Main Image** - This feature is an image underneath the navigation bar and Custom Orders message bar. The image displayed is of some fitness products on the floor. It is not too overwhelming an image.
+- **Call to action button** - A call to action button urges the user to shop now.
+
+**Products Page**
+This page displays a list of all products. The user can use filters and search queries to filter the list to their desired results.
+- **Product Category Links** - There are set of button links that filter the list of products to the selected category.
+- **Products Home Link** - There is a link to bring the user back to the 'Products Home', this will display all products rather than filtering by category or search queries.
+- **Search Results/Product Counters** - Right next to the link to the 'Products Home' is a counter that tells the user how many products are displayed on the page. If the user has entered a search query, the counter will advise how many products were found for that specific search query.
+- **Sort By Selector** -This selector allows the user to order the products displayed by name, rating, price and category in both ascending and descending orders.
+- **Product Cards** - The product cards display the products listed on the site and also show some more information about the product such as the rating and price.
 
 ## Issues and Bugs 
 
