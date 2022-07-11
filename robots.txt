@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow:
+
+Sitemap: https://peachy-fitness.herokuapp.com/site-map.xml
