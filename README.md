@@ -45,6 +45,32 @@ The ideal user of this website is:
 
 ### User Stories
 
+#### Site User:
+- As a Site User, I want to be able to view a list of products so that I can select some to purchase.
+- As a Site User, I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
+- As a Site User, I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
+- As a Site User, I want to be able to easily log in or log out so that I can access my personal account information.
+- As a Site User, I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
+- As a Site User, I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
+- As a Site User, I want to be able to have a personalised user profile so that I can view my order history and order confirmations and save my payment information.
+- As a Site User, I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
+- As a Site User, I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+- As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
+- As a Site User, I want to be able to easily see what I've searched for and the number of results so that I can quickly decide whether the product I want is available.
+- As a Site User, I want to be able to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity or size.
+- As a Site User, I want to be able to view a specific category of products so that I can quickly find products I'm interested in without having to search through all products.
+- As a Site User, I want to be able to view items in my bag to be purchased so that I can Identify the total cost of my purchase.
+- As a Site User, I want to be able to adjust the number of individual items in my bag so that I can easily make changes to my purchase before checkout.
+- As a Site User, I want to be able to receive an email confirmation after checking out so that I can keep the confirmation of what I've purchased for my records.
+- As a Site User, I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
+- As a Site User, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
+- As a Site User, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
+
+#### Store Owner
+- As a Store Owner, I want to be able to add a product so that I can add new items to my store.
+- As a Store Owner, I want to be able to edit/update a product so that I can edit product prices, descriptions, images, and other product criteria.
+- As a Store Owner, I want to be able to delete a product so that I can remove items that I no longer wish to sell.
+
 ### Development Planes
 To prepare for this project, I researched other fitness brand websites. This preparation helped me create the user stories. Some of the websites I used were:
 - [Gymshark](https://eu.gymshark.com/)
@@ -172,7 +198,70 @@ This page displays a list of all products. The user can use filters and search q
 - **Sort By Selector** -This selector allows the user to order the products displayed by name, rating, price and category in both ascending and descending orders.
 - **Product Cards** - The product cards display the products listed on the site and also show some more information about the product such as the rating and price.
 
+**Product Info Page**
+This page will render the information for the chosen product and allow the user to select a size and add the item to the shopping bag.
+- Product Details - The product details change for each product. This would include the product image, name, description, price, rating and category.
+- Size Selector - The size selector can be used to select the specific size for the user.
+- Add to Bag Button - When the user has selected their chosen size, they would click the Add to Bag button to add the desired product and size to their shopping bag for purchasing.
+- Update/Delete Links - Visible only to an authorised user, underneath the product name are two links. One brings the autorised user to the edit product page, the other one deletes the product. Selecting the delete button will immediately delete the product.
+- Comment List - The feature displays any comments available for a certain product.
+- Comments Form - Visible only to a logged in user, this feature allows logged in users to add a comment to the product page. If the user is not logged in, a log in button appears with a message advising the user they are unable to leave a comment unless they log in.
+
+**Shopping Bag Page**
+This page allows the user to view, edit and delete items in their shopping bag before going to the checkout screen.
+- Product Information - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product.
+- Update/Remove Buttons - These features allow the user to update the quantity of an item in their shopping bag, or remove it entirely.
+- Updated Total, Shipping and Grand Total - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to be 10% of the user's total cost, which is then added to create the grand total.
+
+**Checkout Page**
+This page allows the user to securely enter their payment information before pay for their items.
+- Shipping Info Form - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
+- Order Summary - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
+- Stripe Payment Feature - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
+
+**Orer Confirmation Page**
+This page shows the order details of the purchase that was just carried out.
+- Order summary - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+
+**Profile Page**
+This page displays the users profile and their past orders.
+- Order History Log - This feature is a list of past orders placed while logged in. There are links on each order which allows the user to go to the order history page to get a detailed view of the order placed.
+- Link to Order summaries of all past orders - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+- Return To Profile Button - This button brings the user back to the user profile.
+
+**Add Product Page**
+This page allows the authorised user to add a product to the store.
+Add Product - This form allows the authorised user to create a new product.
+
+**Edit Product Page**
+This page allows the authorised user to edit a product in the store.
+- Edit Product Form - This form allows the authorised user to edit the product's details.
+
+### Existing Features
+- **Search bar** - This feature is used to find items on the site, matching the query's keywords to the item's name or description. These results are shown on the products page with an indicator of how many items were found using the keyword(s).
+- **Shopping Bag Icon** - This feature shows the user the current total cost of the items in the shopping bag, including shipping.
+- **Back-to-Top Button** - This feature is only available on certain pages - product page and shopping bag page - and will bring the user back to the top of the page when clicked.
+- **Contact Form** - This feature allows the user to contact the store owner.
+- **Category Buttons** - This feature is a selection of buttons which filters the selection of products by certain categories.
+- **Sort-By Selector** - This feature is a selector box whose selections sort the product list by name, category, rating and price in both ascending and descending order.
+- **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes.
+- **Increment/Decrement Quantity Buttons** - This feature is visible in the product detail and shopping bag pages. It allows the user to click a button to update the item quantity instead of typing it in manually.
+- **Success Message - Add A Product** - This feature appears each time the user adds an item to the shopping bag successfully.
+- **Update/Delete Buttons** - This feature is shown across the site.
+- **Checkout Form** - This feature allows the user to enter payment details, allowing them to purchase the items in their shopping bag.
+- **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided on the checkout page as the shipping address.
+- **Add/Edit Product Form** - This feature allows the site admin to add or edit a product on the site.
+
+[Back to top ⇧](#)
+
 ## Issues and Bugs 
+Below are some issues that I ran into while creating this project:
+- Jquery was not working at first. It turns out I had the wrong link.
+- I had a few issues with html and rows. Things were not in the correct place. One such example was my footer. I had to carefully read through the code and see that the tags were in the correct place.
+- The Javascript script that I was using for the toast notifications was one for Bootstrap4 so they were not working properly. I read through the bootstrap5 documentation on toasts and eventually figured out what to do.
+- I was receiving a programming error when trying to refresh the heroku site. It turns out that I needed to run migrations from the Heroku CLI as well.
+
+[Back to top ⇧](#)
 
 ## Technologies Used
 ### Main Languages Used
@@ -209,9 +298,71 @@ This page displays a list of all products. The user can use filters and search q
 [Back to top ⇧](#)
 
 ## Testing
+### User Stories:
+#### Site User
+- As a Site User, I want to be able to leave a comment on a product so that others can see my thoughts regarding the product.    
+    - There is a form on the product detail page that allows the user to add a title and the body of a comment to the product page. The comment will detail the user's username, date of entry, and the title and body of the comment.
+- As a Site User, I want to be able to search for a product by name or description so that I can find a specific product I'd like to purchase.
+    - There is a search bar in the nav that allows users to search for products based on keywords in the description or name fields.
+- As a Site User, I want to be able to sort the list of available products so that I can easily identify the best rated, best priced and categorically sorted products.
+    - There is a 'sort-by' selector box on the products page which allows the user to sort the products by rating, name, price and category in ascending or decending order.
+- As a Site User, I want to be able to sort a specific category of product so that I can find the best-priced or best-rated product in a specific category, or sort the products in that category by name.
+    - There are navigation links and filter buttons that allow the user to view all products of a certin category or group of categories.
+- As a Site User, I want to be able to easily select the size and quantity of a product when purchasing it so that I can ensure I don't accidentally select the wrong product, quantity or size.
+    - On the product detail page, there is a selection box for sizes and a quantity selector with increment and decrement buttons beside it.
+- As a Site User, I want to be able to adjust the number of individual items in my bag so that I can easily make changes to my purchase before checkout.
+    - There is a quantity increment and decrement button with an update button that allows the user to increase or decrease the number of the specific item they wish to purchase.
+- As a Site User, I want to be able to easily log in or log out so that I can access my personal account information.
+    - There is a link in the header which allows the user to log in, log out and register for an account.
+- As a Site User, I want to be able to easily recover my password in case I forget it so that I can recover access to my account.
+    - There is an option on the log in page to request a reset password link be sent to the user's email address. Clicking the link and entering an email address sends an email to the person's email address to reset their password.
+- As a Site User, I want to be able to receive an email confirmation after registering so that I can verify my account registration was successful.
+    - On registering for an account, a verification email is sent to the user's registered email so they can verify their account and log in.
+- As a Site User, I want to be able to easily enter my payment info so that I can check out quickly and with no hassles.
+    - The checkout screen uses the Stripe payment system for safe and secure payment of purchases.
+- As a Site User, I want to be able to have a user profile so that I can view my order history and order confirmations and save my payment information.
+    - On registration of a new account, a user profile is automatically rendered. Here the user can view their order history and shipping details.
+- As a Site User, I want to be able to view a list of products so that I can select some to purchase.
+    - On the porducts page, a list of product cards are visible, showing the product name, rating, price, category and an image.
+- As a Site User, I want to be able to easily see what I have searched for and the number of results so that I can quickly decide whether the product I want is available.
+    - When a search query has been entered, the user is brought to a filtered products page where they can see the products which align with their search, as well as an indicator of how many items where found relating to the search query.
+- As a Site User, I want to be able to view a specific category of products so that I can quickly find products I am interested in without having to search through all products.
+    - In the nav there are links to each category class for ease of access. In addition, on the products page, there are category buttons that filter with the products currently visible.
+- As a Site User, I want to be able to view individual product details so that I can identify the price, description, product rating, product image and sizes.
+    - Each product in the products list has it's own info page which details the price, description, product rating, product image and sizes.
+- As a Site User, I want to be able to easily view the total of my purchase at any time so that I can avoid spending too much.
+    - The shopping bag icon in the header gives an up-to-date counter of the current shopping bag total. In addition, each item added to the shopping bag activates a pop-up which details your current bag summary, prices, total cost and shipping.
+- As a Site User, I want to be able to view items in my bag to be purchased so that I can identify the total cost of my purchase and all items I will receive.
+    - There is a shopping bag page which allows the user to view all products currently sleected, their sizes and quantities, and the total cost with and without shipping if applicable. Here the user can also update and delete items from the shopping bag if required.
+- As a Site User, I want to be able to feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase.
+    - The link to the shopping bag page advises the checkout is secure, and the payment information input is set to ensure the user's information is correct and valid before purchasing.
+- As a Site User, I want to be able to view an order confirmation after checkout so that I can verify that I haven't made any mistakes.
+    - On submitting a purchase, the user is shown the order confirmation page which details the order information, the shipping details, product information and the total cost. This information can also be viewed on the user profile in the order history section.
+
+#### Store Owner
+- As a Store Owner, I want to be able to add a product so that I can add new items to my store.
+    - There is a page accessible only by superusers where store owners can add products to the store. The link for this page is in the user acconut dropdown in the header. This link takes the user to the add product page where they can fill the product details in the form.
+- As a Store Owner, I want to be able to edit/update a product so that I can change product prices, descriptions, images, and other product criteria.
+    - On the individual products' pages, admin users can can see a link to update the product information. Clicking the link brings the store owner to a prepopulated form where adjustments can be made to the specific product.
+- As a Store Owner, I want to be able to delete a product so that I can remove items that are no longer for sale.
+    - On the individual products' pages, superusers can can see a link to delete the product information. Clicking the link immediately deletes the product page and information.
+
+[Back to top](#)
+
+### Automated Testing
+#### Code Validation
+HTML pages - PASSES
+Create post - PASSES
+User profile - PASSES
+Post detail - PASSES
+Edit post - PASSES
+
+### Compatibility Testing
+- The site looks the same on different browsers.
+- The site is responsive across devices.
 
 ## Deployment 
-For the project, I used the [GitPod](https://gitpod.io/ "GitPod Site") cloud development IDE. I committed the code to Git and then pushed to [GitHub](https://github.com/ "GitHub Site") using the terminal. After, I deployed to code to [Heroku](https://heroku.com/ "Heroku Site").
+For the project, I used the [GitPod](https://gitpod.io/) cloud development IDE. I committed the code to Git and then pushed to [GitHub](https://github.com/) using the terminal. After, I deployed to code to [Heroku](https://heroku.com/).
 
 ### Deploying on Heroku
 To deploy this page to Heroku from its GitHub repository, the following steps were taken:

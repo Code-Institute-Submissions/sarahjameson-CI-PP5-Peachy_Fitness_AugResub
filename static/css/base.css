@@ -222,8 +222,10 @@ footer {
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
-    #delivery-banner {
+    #delivery-banner,
+    .delivery-banner {
         background-color: #414468 !important;
+        color: #D4CFD2;
     }
 
     #delivery-banner h4 {
