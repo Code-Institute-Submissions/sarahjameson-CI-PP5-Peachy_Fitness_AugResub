@@ -37,12 +37,80 @@ Peachy Fitness seeks to empower women and get them more into fitness. The site o
 [Back to top ⇧](#)
 
 ## UX 
-
 ### Ideal User Demographic
 The ideal user of this website is:
 - Women/girls from ages 14 - 40
 - Fashion-conscious people
 - Motivated people
+
+### User Stories
+
+### Development Planes
+To prepare for this project, I researched other fitness brand websites. This preparation helped me create the user stories. Some of the websites I used were:
+- [Gymshark](https://eu.gymshark.com/)
+- [Gym plus Coffee](https://gympluscoffee.com/)
+- [Shreddy](https://shreddy.com/)
+
+#### Strategy
+With this website, I concentrated on the following aspects:
+- Roles
+    - Site User
+    - Site Owner
+- Demographic
+    - Women/girls around 14-40
+    - Fitness enthusiasts
+- Psychographics
+    - Personality & Attitudes:
+        - Playful
+        - Sporty
+        - Outgoing
+        - Motivated
+
+    - Values:
+        - Has a growth mindset
+        - Positive
+        - Fashionable
+
+    - Lifestyles:
+        - Has friends who have similar interests such as hiking or other outdoor activities
+        - Keeps up with the latest trends
+        - Likes trying out different things like Irish dancing or painting etc
+        - Likes to look good
+
+I found that the website needs to enable the **Site User** to:
+- Find attractive and high quality exercise products for women in all sizes.
+- Add the desired products to the shopping bag for purchasing.
+- Filter the products based on name, categories, rating and prices.
+- Search products by name or description.
+- Create a profile with the saved user info and past orders.
+
+The website needs to enable the **Site Owner** to:
+- Add, edit and delete products on the site.
+- View orders on the admin panel.
+
+##### **eCommerce Application Type and Marketing Strategy**
+To create a site that fit the user's needs, I planned the following marketing strategy:
+
+- **eCommerce Type:**
+    - **B2C** - I used SEO (Search Engine Optimisation), Content Marketing in the form of a newsletter, and Social Media Marketing in the form of a Facebook and Instagram page.
+
+- Marketing Types:
+    - **SEO** - SEO is useful for ensuring a good online presence. It is important to be present in the digital landscape as this form is everywhere around us and an important platform for a business. SEO must be carefully managed to not be treated as spam. I tried to avoid spaming the page content with words. I made sure to fill the meta tag with valuable keywords and a useful description.
+
+    - **Content Marketing** - I used a newsletter. This marketing can help keep the business stay in the mind of the customer and convey a personality to them also. It allows the store to talk about what they are most knowledgable about and as a result build confidence in the users reading the content.
+
+    - **Social Media Marketing** - I used Organic Social Media Marketing. It is a free and easy way to get a brand across. The site can be shared with others and special events or sales can be shared free of charge. This allows the store to connect directly with the consumer and build relationships and loyalty with the customers. This form of marketing can also be used to improve the store's customer service and support. Issues can be dealt with publically in a friendly or even funny way. The social media chosen for this project was [Facebook](https://www.facebook.com/Peachy-Fitness-104511555665795).
+
+<details>
+
+<details>
+<summary>Facebook Screenshot:</summary>
+
+![Facebook Page for Peachy Fitness](static/media/README/facebook.png)
+
+</details>
+
+### Design
 
 ## Features
 

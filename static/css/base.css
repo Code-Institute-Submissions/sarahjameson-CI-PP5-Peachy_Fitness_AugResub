@@ -245,7 +245,13 @@ footer, footer a {
     .header-container {
         padding-top: 164px;
     }
-}
+
+    #mc_embed_signup {
+        background: #414468;
+        clear: left;
+        width: 600px;
+    }
+
 
 @media (max-width: 991px) {
     .header-container {
