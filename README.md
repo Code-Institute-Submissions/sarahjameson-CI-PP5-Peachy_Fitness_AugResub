@@ -131,4 +131,7 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Acknowledgements 
 
+- Thank you to my wonderful family for always supporting me
+- Thank you to Hassan for always listening to me, encouraging, supporting me and giving me his opinion when I need it
+
 
