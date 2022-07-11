@@ -16,7 +16,7 @@ def contact(request):
                              ('You successfuly submitted a message! '
                               'We will be in contact with you soon. '
                               'Thank you for reaching out!'))
-            return redirect(reverse('query'))
+            return redirect(reverse('contact'))
         else:
             messages.error(request,
                            ('Failed to submit message. '
@@ -28,6 +28,7 @@ def contact(request):
 
     context = {
         'form': form,
+        'bag_details_not_required': True
     }
 
     return render(request, template, context)

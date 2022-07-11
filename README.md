@@ -49,6 +49,38 @@ The ideal user of this website is:
 ## Issues and Bugs 
 
 ## Technologies Used
+### Main Languages Used
+-[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+-[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-[CSS](https://en.wikipedia.org/wiki/CSS)
+-[HTML](https://en.wikipedia.org/wiki/HTML)
+
+### Frameworks, Libraries, Programs and Additional Languages Used
+- [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
+    - Used to build the pages used in the site and the working of the website.
+
+- [Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework))
+    - Used to add styling to the website.
+
+- [GitPod](https://gitpod.io/)
+    - Used for the IDE.
+
+- [GitHub](https://github.com/)
+    - Used for version control.
+
+- [Heroku](https://heroku.com/)
+    - Used for the deployment of the website.
+
+- [AWS](https://aws.amazon.com/)
+    - Used to host MEDIA and STATIC files for the deployed site.
+
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/)
+    - Used for the site's authentication system.
+
+- [AmIResponsive](https://ui.dev/amiresponsive "AmIResponsive Site")
+    - Used to generate mockup imagery of the finished website.
+
+[Back to top ⇧](#)
 
 ## Testing
 
