@@ -1,6 +1,8 @@
 # Peachy Fitness
 
-insert pic and deployed site links/github
+![](static/media/README/am-i-responsive.png)
+
+[Deployed site](https://peachy-fitness.herokuapp.com/)
 
 ## Table of contents
 1. [Introduction](#Introduction)
@@ -12,22 +14,19 @@ insert pic and deployed site links/github
 3. [Features](#Features)
     1. [Design Features](#Design-Features) 
     2. [Existing Features](#Existing-Features)
-    3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
 4. [Issues and Bugs](#Issues-and-Bugs)
 5. [Technologies Used](#Technologies-Used)
      1. [Main Languages Used](#Main-Languages-Used)
      2. [Additional Languages Used](#Additional-Languages-Used)
      3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
 6. [Testing](#Testing)
-     1. [Testing.md](TESTING.md)
+     1. [Testing User Stories](#Testing-User-Stories)
+     2. [Automated Testing](#Automated-Testing)
 7. [Deployment](#Deployment)
      1. [Deploying on Heroku](#Deploying-on-Heroku)
      2. [Forking the Repository](#Forking-the-Repository)
      3. [Creating a Clone](#Creating-a-Clone)
 8. [Credits](#Credits)
-     1. [Content](#Content)
-     2. [static/Media](#static/Media)
-     3. [Code](#Code)
 9. [Acknowledgements](#Acknowledgements)
 
 ## Introduction
@@ -171,7 +170,6 @@ The imagery used in this site is entirely related to the products being sold - e
 ## Features
 ## Design Features
 **Navigation & Header**
-
 Each page of the website features a consistent responsive navigational system:
 - **Logo** - The Logo heading is linked to the home page, clicking it will bring the user back to the home page.
 - **Search Bar** - The search bar is coded to display the results of the user's search request.
@@ -179,16 +177,24 @@ Each page of the website features a consistent responsive navigational system:
 - **Link to user's profile** - There is a link to the user's profile depending on if they are linked in or not.
 - **Links to Category Pages** - There are links to several categories of product pages. These pages show products of certain categories grouped by different categories such as leggings and sports_bras.
 
+![](media/README/nav-bar.png)
+![](media/README/nav-bar-links.png)
+
 **Footer**
 Each page of the website features a consistent responsive footer design:
 - **A 'Stay in touch' Piece Of Text** - The footer displays a text asking the users to stay in touch.
 - **Social Media Links** - These links connect the site user to the store's business Facebook page.
 - **Subscribe to newsletter** - Mailchimp form is present in the footer.
 
+![](media/README/footer.png)
+
 **Home Page**
 The home page is the main entry page to the site and gives the customer a call to action straight away. The purpose of the site is clear.
 - **Main Image** - This feature is an image underneath the navigation bar and Custom Orders message bar. The image displayed is of some fitness products on the floor. It is not too overwhelming an image.
 - **Call to action button** - A call to action button urges the user to shop now.
+
+![](media/README/home-page.png)
+![](media/README/call-to-action.png)
 
 **Products Page**
 This page displays a list of all products. The user can use filters and search queries to filter the list to their desired results.
@@ -198,50 +204,66 @@ This page displays a list of all products. The user can use filters and search q
 - **Sort By Selector** -This selector allows the user to order the products displayed by name, rating, price and category in both ascending and descending orders.
 - **Product Cards** - The product cards display the products listed on the site and also show some more information about the product such as the rating and price.
 
-**Product Info Page**
+![](media/README/products.png)
+
+**Product Detail Page**
 This page will render the information for the chosen product and allow the user to select a size and add the item to the shopping bag.
-- Product Details - The product details change for each product. This would include the product image, name, description, price, rating and category.
-- Size Selector - The size selector can be used to select the specific size for the user.
-- Add to Bag Button - When the user has selected their chosen size, they would click the Add to Bag button to add the desired product and size to their shopping bag for purchasing.
-- Update/Delete Links - Visible only to an authorised user, underneath the product name are two links. One brings the autorised user to the edit product page, the other one deletes the product. Selecting the delete button will immediately delete the product.
-- Comment List - The feature displays any comments available for a certain product.
-- Comments Form - Visible only to a logged in user, this feature allows logged in users to add a comment to the product page. If the user is not logged in, a log in button appears with a message advising the user they are unable to leave a comment unless they log in.
+- **Product Details** - The product details change for each product. This would include the product image, name, description, price, rating and category.
+- **Size Selector** - The size selector can be used to select the specific size for the user.
+- **Add to Bag Button** - When the user has selected their chosen size, they would click the Add to Bag button to add the desired product and size to their shopping bag for purchasing.
+- **Update/Delete Links** - Visible only to an authorised user, underneath the product name are two links. One brings the autorised user to the edit product page, the other one deletes the product. Selecting the delete button will immediately delete the product.
+- **Comment List** - The feature displays any comments available for a certain product.
+- **Comments Form** - Visible only to a logged in user, this feature allows logged in users to add a comment to the product page. If the user is not logged in, a log in button appears with a message advising the user they are unable to leave a comment unless they log in.
+
+![](media/README/product-detail.png)
+![](media/README/notification.png)
 
 **Shopping Bag Page**
 This page allows the user to view, edit and delete items in their shopping bag before going to the checkout screen.
-- Product Information - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product.
-- Update/Remove Buttons - These features allow the user to update the quantity of an item in their shopping bag, or remove it entirely.
-- Updated Total, Shipping and Grand Total - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to be 10% of the user's total cost, which is then added to create the grand total.
+- **Product Information** - This feature displays the information of each item added to the shopping bag. This includes the name, price, image, size and quantity of the product.
+- **Update/Remove Buttons** - These features allow the user to update the quantity of an item in their shopping bag, or remove it entirely.
+- **Updated Total, Shipping and Grand Total** - The total cost of the shopping bag updates each time an item is added, updated or remove**d from the shopping bag. If the user spends more than €100.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to be 10% of the user's total cost, which is then added to create the grand total.
+
+![](media/README/shopping-bag.png)
 
 **Checkout Page**
 This page allows the user to securely enter their payment information before pay for their items.
-- Shipping Info Form - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
-- Order Summary - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
-- Stripe Payment Feature - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
+- **Shipping Info Form** - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
+- **Order Summar**y - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
+- **Stripe Payment Feature** - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
+
+![](media/README/checkout.png)
 
 **Orer Confirmation Page**
 This page shows the order details of the purchase that was just carried out.
-- Order summary - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+- **Order summary** - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+
+![](media/README/order-confirmation.png)
 
 **Profile Page**
 This page displays the users profile and their past orders.
-- Order History Log - This feature is a list of past orders placed while logged in. There are links on each order which allows the user to go to the order history page to get a detailed view of the order placed.
-- Link to Order summaries of all past orders - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
-- Return To Profile Button - This button brings the user back to the user profile.
+- **Order History Lo** - This feature is a list of past orders placed while logged in. There are links on each order which allows the user to go to the order history page to get a detailed view of the order placed.
+- **Link to Order summaries of all past orders** - This features details the order summary, containing the shipping information, product details and cost information. A unique order number is also provided.
+- **Return To Profile Button** - This button brings the user back to the user profile.
+
+![](media/README/users-profile.png)
 
 **Add Product Page**
 This page allows the authorised user to add a product to the store.
-Add Product - This form allows the authorised user to create a new product.
+- **Add Produc**t - This form allows the authorised user to create a new product.
+
+![](media/README/add-product.png)
 
 **Edit Product Page**
 This page allows the authorised user to edit a product in the store.
-- Edit Product Form - This form allows the authorised user to edit the product's details.
+- **Edit Product Form** - This form allows the authorised user to edit the product's details.
+
+![](media/README/edit-product.png)
 
 ### Existing Features
 - **Search bar** - This feature is used to find items on the site, matching the query's keywords to the item's name or description. These results are shown on the products page with an indicator of how many items were found using the keyword(s).
 - **Shopping Bag Icon** - This feature shows the user the current total cost of the items in the shopping bag, including shipping.
 - **Back-to-Top Button** - This feature is only available on certain pages - product page and shopping bag page - and will bring the user back to the top of the page when clicked.
-- **Contact Form** - This feature allows the user to contact the store owner.
 - **Category Buttons** - This feature is a selection of buttons which filters the selection of products by certain categories.
 - **Sort-By Selector** - This feature is a selector box whose selections sort the product list by name, category, rating and price in both ascending and descending order.
 - **Size Selector And Guide** - This feature only appears when the item has size options available. If the item has sizes, a selector box appears with a list of sizes.
@@ -251,6 +273,16 @@ This page allows the authorised user to edit a product in the store.
 - **Checkout Form** - This feature allows the user to enter payment details, allowing them to purchase the items in their shopping bag.
 - **Order Confirmation** - This feature is shown after a purchase is made. It details the items purchased, their sizes, prices and quantity. It also lists the details provided on the checkout page as the shipping address.
 - **Add/Edit Product Form** - This feature allows the site admin to add or edit a product on the site.
+
+![](media/README/search.png)
+
+![](media/README/shopping-bag-icon.png)
+
+![](media/README/back-to-top.png)
+
+![](media/README/sizing.png)
+
+- **Contact Form** - This feature allows the user to contact the store owner.
 
 [Back to top ⇧](#)
 
@@ -265,10 +297,10 @@ Below are some issues that I ran into while creating this project:
 
 ## Technologies Used
 ### Main Languages Used
--[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
--[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
--[CSS](https://en.wikipedia.org/wiki/CSS)
--[HTML](https://en.wikipedia.org/wiki/HTML)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [HTML](https://en.wikipedia.org/wiki/HTML)
 
 ### Frameworks, Libraries, Programs and Additional Languages Used
 - [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
@@ -298,7 +330,7 @@ Below are some issues that I ran into while creating this project:
 [Back to top ⇧](#)
 
 ## Testing
-### User Stories:
+### Testing User Stories:
 #### Site User
 - As a Site User, I want to be able to leave a comment on a product so that others can see my thoughts regarding the product.    
     - There is a form on the product detail page that allows the user to add a title and the body of a comment to the product page. The comment will detail the user's username, date of entry, and the title and body of the comment.
@@ -347,19 +379,27 @@ Below are some issues that I ran into while creating this project:
 - As a Store Owner, I want to be able to delete a product so that I can remove items that are no longer for sale.
     - On the individual products' pages, superusers can can see a link to delete the product information. Clicking the link immediately deletes the product page and information.
 
-[Back to top](#)
-
 ### Automated Testing
 #### Code Validation
-HTML pages - PASSES
-Create post - PASSES
-User profile - PASSES
-Post detail - PASSES
-Edit post - PASSES
+- HTML pages - PASSES
+    - There were only some warnings about using type attributes. I decided to leave them in.
+- CSS pages - PASSES
+- JavaScript files - PASSES
+    - There was a warning - 'template literal syntax' is only available in ES6 (use 'esversion: 6') - that came up. However, I found from Slack that you must configure the validator and turn on ES6. Unfortunately, JSHint does not accept it as default.
+- Python Files - The files in the following apps were put into a PEP8 validator. There were a lot of spacing issues. These have all been rectified now and everything is passing.
+    - Checkout - PASSES
+    - Contact - PASSES
+    - Home - PASSES
+    - Peachy Fitness - PASSES
+    - Products - PASSES
+    - Profiles - PASSES
+    - Shopping bag - PASSES
 
 ### Compatibility Testing
 - The site looks the same on different browsers.
 - The site is responsive across devices.
+
+[Back to top ⇧](#)
 
 ## Deployment 
 For the project, I used the [GitPod](https://gitpod.io/) cloud development IDE. I committed the code to Git and then pushed to [GitHub](https://github.com/) using the terminal. After, I deployed to code to [Heroku](https://heroku.com/).
@@ -438,9 +478,18 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Credits 
 
+Thank you to:
+- Stackoverflow
+- YouTube
+- Code Institute videos
+- Pexels and unsplash
+- Tiny PNG for compressing my images
+
+[Back to top ⇧](#)
+
 ## Acknowledgements 
 
 - Thank you to my wonderful family for always supporting me
 - Thank you to Hassan for always listening to me, encouraging, supporting me and giving me his opinion when I need it
 
-
+[Back to top ⇧](#)
