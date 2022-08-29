@@ -62,3 +62,5 @@ class Comment(models.Model):
         and the content of the comment.
         """
         return f"Comment on {self.product.name} by {self.author}"
+
+
