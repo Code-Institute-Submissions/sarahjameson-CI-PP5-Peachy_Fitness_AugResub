@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, Comment
 
+
 class ProductAdmin(admin.ModelAdmin):
     """
     For products in the admin area.
@@ -17,6 +18,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('name',)
 
+
 class CategoryAdmin(admin.ModelAdmin):
     """
     For categories in the admin area.
@@ -25,6 +27,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
         'friendly_name',
     )
+
 
 class CommentAdmin(admin.ModelAdmin):
     """

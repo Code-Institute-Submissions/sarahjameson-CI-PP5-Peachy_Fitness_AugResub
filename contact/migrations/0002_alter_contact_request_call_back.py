@@ -13,6 +13,12 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='contact',
             name='request_call_back',
-            field=models.CharField(choices=[('NO_REQUEST_CALL_BACK', 'No'), ('REQUEST_CALL_BACK', 'Yes')], max_length=20),
+            field=models.CharField(
+                choices=[
+                    ('NO_REQUEST_CALL_BACK',
+                     'No'),
+                    ('REQUEST_CALL_BACK',
+                     'Yes')],
+                max_length=20),
         ),
     ]

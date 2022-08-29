@@ -61,27 +61,28 @@ def checkout(request):
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
-                            order_line_item = OrderLineItem(
+                        order_line_item = OrderLineItem(
                             order=order,
                             product=product,
                             quantity=item_data,
-            )
-                            order_line_item.save()
+                        )
+                        order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items(
+                        ):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
                                 quantity=quantity,
                                 product_size=size,
-            )
+                            )
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the items in your shopping bag was not found \
                             in our database. "
                         "Please call our customer service for assistance.")
-            )
+                    )
                     order.delete()
                     return redirect(reverse('view_shopping_bag'))
 

@@ -13,7 +13,8 @@ class Contact(models.Model):
     name = models.CharField(max_length=254)
     email = models.EmailField()
     phone_number = models.CharField(max_length=30, blank=True)
-    request_call_back = models.CharField(max_length=20, choices=CONTACT_CHOICES)
+    request_call_back = models.CharField(
+        max_length=20, choices=CONTACT_CHOICES)
     message = models.TextField()
     contact_date = models.DateField(auto_now_add=True)
 

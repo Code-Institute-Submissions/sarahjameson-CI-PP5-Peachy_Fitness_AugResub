@@ -14,13 +14,35 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Contact',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=254)),
-                ('email', models.EmailField(max_length=254)),
-                ('phone_number', models.CharField(blank=True, max_length=30)),
-                ('request_call_back', models.CharField(choices=[('REQUEST_CALL_BACK', 'Yes'), ('NO_REQUEST_CALL_BACK', 'No')], max_length=20)),
-                ('message', models.TextField()),
-                ('contact_date', models.DateField(auto_now_add=True)),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('name',
+                 models.CharField(
+                     max_length=254)),
+                ('email',
+                 models.EmailField(
+                     max_length=254)),
+                ('phone_number',
+                 models.CharField(
+                     blank=True,
+                     max_length=30)),
+                ('request_call_back',
+                 models.CharField(
+                     choices=[
+                         ('REQUEST_CALL_BACK',
+                          'Yes'),
+                         ('NO_REQUEST_CALL_BACK',
+                          'No')],
+                     max_length=20)),
+                ('message',
+                 models.TextField()),
+                ('contact_date',
+                 models.DateField(
+                     auto_now_add=True)),
             ],
         ),
     ]

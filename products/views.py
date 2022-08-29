@@ -16,7 +16,7 @@ def all_products(request):
     direction = None
 
     if request.GET:
-         if 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
@@ -30,12 +30,12 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-         if 'category' in request.GET:
+        if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-         if 'q' in request.GET:
+        if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter a search term")
@@ -98,9 +98,9 @@ def add_product(request):
                 product')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request,
-                           ("I'm sorry, there was a failure adding your product. "
-                            "Please check your form and try again."))
+            messages.error(
+                request, ("I'm sorry, there was a failure adding your product. "
+                          "Please check your form and try again."))
     else:
         product_form = ProductForm()
 
@@ -131,8 +131,8 @@ def edit_product(request, product_id):
                              (f'You sucessfully edited {product.name}!'))
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request,
-                           (f"I'm sorry, you were unable to edit {product.name}. \
+            messages.error(
+                request, (f"I'm sorry, you were unable to edit {product.name}. \
                             Please check your form and try again."))
     else:
         product_form = ProductForm(instance=product)
